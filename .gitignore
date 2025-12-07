@@ -1,3 +1,4 @@
 node_modules
 .env
 .vscode
+public/assets/videos/port_loading.mp4
