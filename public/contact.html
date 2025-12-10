@@ -140,30 +140,28 @@
         </div>
     </div>
 
-    <script>
-document.getElementById("contactForm").addEventListener("submit", function(e) {
+   <script>
+document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
   const data = {
-    name: name.value,
-    email: email.value,
-    phone: phone.value,
-    message: message.value
+    name: document.getElementById("name").value.trim(),
+    email: document.getElementById("email").value.trim(),
+    phone: document.getElementById("phone").value.trim(),
+    message: document.getElementById("message").value.trim()
   };
 
-  fetch("https://script.google.com/macros/s/AKfycbwzdRffLJfuoduAJvKJ3bsbTgDlxZNfkHegpvHMlEhowR_8ReXrrbgsAS9X0FXafbAb1Q/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbyK_j9QUnrr4vN4edKMe5rEUwMN1L9VFYPU3xT_Huw9sJBnwB7xSg6C3o0SEgqoAn34HQ/exec", {
     method: "POST",
+    mode: "no-cors",
+    headers: {
+      "Content-Type": "application/json"
+    },
     body: JSON.stringify(data)
   })
-  .then(res => res.json())
-  .then(response => {
-    if (response.status === "blocked") {
-      alert("Disposable or fake email detected. Please use a real email.");
-      return;
-    }
-
-    alert("✅ Enquiry submitted successfully!");
-    this.reset();
+  .then(() => {
+    alert("✅ Enquiry submitted successfully! We’ll contact you shortly.");
+    document.getElementById("contactForm").reset();
   })
   .catch(() => {
     alert("⚠️ Network error. Please try again.");
@@ -172,7 +170,6 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
 </script>
 
 
-    </script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/chatbot.js"></script>
 
