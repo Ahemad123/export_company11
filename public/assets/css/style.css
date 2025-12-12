@@ -997,3 +997,218 @@ footer {
     to { transform: translateY(0); opacity: 1; }
 }
 
+         
+
+    /* RFQ Form Custom Styles */
+    .rfq-form-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+      padding: 3rem;
+      max-width: 900px;
+      margin: 3rem auto 0;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .rfq-form-card:hover {
+      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+    }
+
+    .form-section {
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 2px solid #f0f0f0;
+    }
+
+    .form-section:last-of-type {
+      border-bottom: none;
+      margin-bottom: 2rem;
+    }
+
+    .form-section-title {
+      font-size: 1.25rem;
+      color: var(--color-primary);
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+   .form-grid {
+  display: grid;
+  grid-template-columns: 1fr;   /* 👈 SINGLE COLUMN */
+  gap: 1.5rem;
+}
+
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group-full {
+      grid-column: 1 / -1;
+    }
+
+    .form-group label {
+      font-weight: 600;
+      color: var(--color-text-dark);
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 0.875rem 1rem;
+      border: 2px solid #e5e7eb;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: var(--font-main);
+      transition: all 0.3s ease;
+      background-color: #fafafa;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      background-color: white;
+      box-shadow: 0 0 0 3px rgba(10, 35, 66, 0.1);
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: #9ca3af;
+    }
+
+    .form-group select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%230a2342' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 2.5rem;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .form-submit {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .btn-large {
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    .btn-large:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(10, 35, 66, 0.3);
+    }
+
+    .form-note {
+      margin-top: 1rem;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .rfq-form-card {
+        padding: 2rem 1.5rem;
+        margin: 2rem auto 0;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .form-section-title {
+        font-size: 1.1rem;
+      }
+
+      .btn-large {
+        width: 100%;
+        padding: 0.875rem 2rem;
+      }
+    }
+
+    /* Input validation styles */
+    .form-group input:invalid:not(:placeholder-shown),
+    .form-group select:invalid:not(:placeholder-shown),
+    .form-group textarea:invalid:not(:placeholder-shown) {
+      border-color: #ef4444;
+    }
+
+    .form-group input:valid:not(:placeholder-shown),
+    .form-group select:valid,
+    .form-group textarea:valid:not(:placeholder-shown) {
+      border-color: #10b981;
+    }
+
+    /* RFQ Header Blue Box */
+/* RFQ Header – same width as form */
+.rfq-header-box {
+  background: linear-gradient(135deg, #0a2342, #081b33);
+  border-radius: 20px;
+  padding: 3.5rem 2rem;
+  text-align: center;
+
+  /* MATCH FORM WIDTH */
+  max-width: 900px;
+  margin: 0 auto 3rem;
+
+  border: 2px solid #c5a059;
+  box-shadow: 0 20px 50px rgba(10, 35, 66, 0.35);
+}
+
+
+.rfq-tag {
+  display: inline-block;
+  color: #c5a059;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.rfq-header-box h1 {
+  color: #c5a059;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.rfq-header-box p {
+  color: #e5e7eb;
+  font-size: 1.05rem;
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .rfq-header-box {
+    padding: 2.5rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .rfq-header-box h1 {
+    font-size: 1.9rem;
+  }
+}
+
+  

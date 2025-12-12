@@ -1,235 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Get a Quote | Serani Export</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/chatbot.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/chatbot.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
 </head>
 
 <body>
 
-    <header>
-        <div class="container">
-            <nav>
-                <a href="index.html" class="logo">
-                    <img src="assets/images/logo.png" alt="Serani Export" style="height: 80px; width: auto;">
-                </a>
-                <div class="menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="products.html">Products</a>
-                    <a href="contact.html" class="active">Contact</a>
-                    <a href="rfq.html?producte" class="btn btn-primary">Get a Quote</a>
-                </div>
-            </nav>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.png" alt="Serani Export" style="height: 80px; width: auto;">
+        </a>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </header>
-
-    <section class="about-hero section-padding">
-        <div class="container">
-             <div class="rfq-box">
-            <div class="section-header text-center">
-                
-                <h1 class="about-title">Request Quotation</h1>
-                <p class="about-subtitle">We are here to answer any questions you may have about our services.</p>
-            </div>
-            </div>
-            <div style="max-width: 600px; margin: 0 auto;">
-
-
-
-    <form id="rfqForm" style="display:grid; gap:1rem; margin-top:2rem;">
-
-       <div style="display:flex; align-items:center; gap:35px;">
-  <label for="Product" style="width: 100px; margin-bottom: 0.5rem; font-weight: 500;">Product</label>
-  <input type="text" id="product" placeholder="Product Name"  required style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
-</div>
-
-    <div style="display:flex; align-items:center; gap: 48px;">
-  <label for="grade" style="width: 100px; margin-bottom:0.5rem; font-weight: 500;">Grade</label>
-  <input type="text" id="grade" placeholder="Grade / Quality"  required style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
-</div>
-
-    <div style="display:flex; align-items:center; gap:35px;">
-  <label for="quantity" style="width: 100px; margin-bottom: 0.5rem; font-weight: 500;">Quantity</label>
-  <input type="number" id="quantity" placeholder="Quantity" min="1" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
-  <span style="margin-left:10px;">(in Metric Tons)</span>
-</div>
-
-    <div style="display:flex; align-items:center; gap: 20px;">
-  <label for="packaging" style="width: 100px; margin-bottom: 0.5rem; font-weight: 500;">Packaging</label>
-  <input type="text" id="packaging" name="packaging" placeholder="Packaging Type" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
-</div>
-
-    <div style="display:flex; align-items:center; gap: 40px;">
-  <label for="country" style="width: 100px; margin-bottom: 0.5rem; font-weight: 500;">Country</label>
-  <input type="text" id="country" name="country" placeholder="Delivery Country" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
-</div>
-
-    <div style="display:flex; align-items:center; gap: 40px;">
-  <label for="port" style="width: 100px; margin-bottom: 0.5rem; font-weight: 500;">Dest Port</label>
-  <input type="text" id="port" name="port" placeholder="Destination Port" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
-</div>
-  
-      <div style="display:flex; align-items:center; gap: 40px;">
-    <label for="incoterm" style="width: 100px; margin-bottom: 0.5rem; font-weight: 500;">Incoterm</label>
-      <select id="incoterm" name="incoterm" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
-        <option value="">Select Incoterm</option>
-        <option>FOB</option>
-        <option>CIF</option>
-        <option>EXW</option>
-      </select>
-      </div>
-
-       <div style="display:flex; align-items:center; gap: 40px;">
-    <label for="payment" style="width: 100px; margin-bottom: 0.5rem; font-weight: 500;">PaymentTerm</label>
-      <select id="payment" name="payment" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
-        <option value="">Select Payment Term</option>
-        <option>Advance</option>
-        <option>LC at Sight</option>
-        <option>TT</option>
-      </select>
-      </div>
-
-      <div style="display:flex; align-items:center; gap:35px;">
-  <label for="name" style="width: 100px; margin-bottom: 0.5rem; font-weight: 500;">Name</label>
-  <input type="text" id="name" name="name" style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
-</div>
-
-      
-    <div style="display:flex; align-items:center; gap:40px;">
-    <label for="email" style="display: flex; margin-bottom: 0.5rem; font-weight: 500;">Email</label>
-    <input type="email" id="email" name="email" required
-      style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
-  </div>
-      
-  <div style="display:flex; align-items:center; gap:32px;">
-    <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Phone</label>
-    <input type="text" id="phone" name="phone" required
-      style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;">
-  </div>
-
-      <div style="display:flex; align-items:center; gap:12px;">
-    <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Message</label>
-    <textarea id="message" name="message" rows="5" required
-      style="width: 100%; padding: 0.75rem; border: 1px solid var(--color-border); border-radius: 4px;"></textarea>
-  </div>
-
-      <button type="submit" class="btn btn-primary">Submit Request</button>
-
-    </form>
-
-  </div>
-</section>
-
-<footer>
-        <div class="container footer-content">
-            <div class="footer-col">
-                <h3>Serani Export.</h3>
-                <p>Connecting quality with opportunity.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Contact</h4>
-                <p><strong>Address : </strong><p>Langha Matam, Near Bukhari Masjid. Dhoraji, Rajkot, Gujarat-360410</p><br>
-                <p><strong>Email : </strong><p><a href="contact.html">info@seraniexport.com</a></p><br>
-                <p><strong>Mobile :</strong><p>+91 98765 43210</p>
-            </div>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html" class="active">Contact</a>
+          <a href="rfq.html?producte" class="btn btn-primary">Get a Quote</a>
         </div>
-        <div class="footer-bottom text-center">
-            <p>&copy; 2025 Serani Export. All rights reserved.</p>
-        </div>
-    </footer>
-
-<button class="chatbot-toggler">
-        <span class="material-symbols-outlined">mode_comment</span>
-        <span class="material-symbols-outlined">close</span>
-    </button>
-    <div class="chatbot">
-        <header>
-            <h2>Serani Assistant</h2>
-            <span class="close-btn material-symbols-outlined">close</span>
-        </header>
-        <ul class="chatbox">
-            <li class="chat incoming">
-                <span class="material-symbols-outlined">smart_toy</span>
-                <p>Hi there 👋<br>How can I help you today?</p>
-            </li>
-        </ul>
-        <div class="chat-input">
-            <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
-            <span id="send-btn" class="material-symbols-outlined">send</span>
-        </div>
+      </nav>
     </div>
+  </header>
 
-<script>
-  // ✅ AUTO-FILL PRODUCT FROM URL
-  const params = new URLSearchParams(window.location.search);
-  document.getElementById("product").value = params.get("product") || "";
-</script>
+  
 
-<script>
-document.getElementById("rfqForm").addEventListener("submit", function(e) {
-  e.preventDefault();
 
-  const data = {
-    product: product.value,
-    grade: grade.value,
-    quantity: quantity.value,
-    packaging: packaging.value,
-    country: country.value,
-    port: port.value,
-    incoterm: incoterm.value,
-    payment: payment.value,
-    name: name.value,
-    email: email.value,
-    phone: phone.value,
-    message: message.value
-  };
 
-  fetch("https://script.google.com/macros/s/AKfycbwovCag7WwtFJgFD0GFSmNokSP-nxdld0ilQ1IUmlVe-PqwuZKPy8yzSJBhP1VPWXzpSw/exec", {
-    method: "POST",
-    mode: "no-cors",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(data)
-  })
-  .then(() => {
-    alert("✅ Your quotation request has been submitted successfully. Our team will contact you shortly.");
-    document.getElementById("rfqForm").reset();
-  })
-  .catch(() => {
-    alert("⚠️ Submission failed. Please try again.");
-  });
-});
-</script>
+ <!-- RFQ Form Section -->
+  <section class="section-padding bg-off-white">
+    <div class="container">
+      <div class="rfq-header-box">
+  
+  <h1><span class="rfq-tag">📄 </span>Request a Quotation</h1>
+  <p>
+    Fill out the form below and our team will get back to you with a
+    competitive quote within 24 hours.
+  </p>
+</div>
 
-<script src="assets/js/script.js"></script>
-    <script src="assets/js/chatbot.js"></script>
+
+
+      <!-- RFQ Form Card -->
+      <div class="rfq-form-card">
+        <form id="rfqForm">
+
+          <!-- Product Information Section -->
+          <div class="form-section">
+            <h3 class="form-section-title">📦 Product Information</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="product">Product Name *</label>
+                <input type="text" id="product" placeholder="e.g., Basmati Rice" required>
+              </div>
+
+              <div class="form-group">
+                <label for="grade">Grade / Quality *</label>
+                <input type="text" id="grade" placeholder="e.g., Premium Grade A" required>
+              </div>
+
+              <div class="form-group">
+                <label for="quantity">Quantity (Metric Tons) *</label>
+                <input type="number" id="quantity" placeholder="e.g., 100" min="1" required>
+              </div>
+
+              <div class="form-group">
+                <label for="packaging">Packaging Type *</label>
+                <input type="text" id="packaging" name="packaging" placeholder="e.g., 50kg bags" required>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shipping Information Section -->
+          <div class="form-section">
+            <h3 class="form-section-title">🚢 Shipping Details</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="country">Destination Country *</label>
+                <input type="text" id="country" name="country" placeholder="e.g., United States" required>
+              </div>
+
+              <div class="form-group">
+                <label for="port">Destination Port *</label>
+                <input type="text" id="port" name="port" placeholder="e.g., Port of Los Angeles" required>
+              </div>
+
+              <div class="form-group">
+                <label for="incoterm">Incoterm *</label>
+                <select id="incoterm" name="incoterm" required>
+                  <option value="">Select Incoterm</option>
+                  <option value="FOB">FOB (Free On Board)</option>
+                  <option value="CIF">CIF (Cost, Insurance & Freight)</option>
+                  <option value="EXW">EXW (Ex Works)</option>
+                  <option value="CFR">CFR (Cost and Freight)</option>
+                  <option value="DDP">DDP (Delivered Duty Paid)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="payment">Payment Terms *</label>
+                <select id="payment" name="payment" required>
+                  <option value="">Select Payment Term</option>
+                  <option value="Advance">Advance Payment</option>
+                  <option value="LC at Sight">LC at Sight</option>
+                  <option value="TT">Telegraphic Transfer (TT)</option>
+                  <option value="CAD">Cash Against Documents</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Information Section -->
+          <div class="form-section">
+            <h3 class="form-section-title">👤 Your Contact Information</h3>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="john@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8900" required>
+              </div>
+
+              <div class="form-group form-group-full">
+                <label for="message">Additional Requirements</label>
+                <textarea id="message" name="message" rows="4"
+                  placeholder="Please provide any additional details or special requirements..."></textarea>
+              </div>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary btn-large">
+              <span>Submit Quotation Request</span>
+              <span style="margin-left: 8px;">→</span>
+            </button>
+            <p class="form-note">We'll respond to your request within 24 business hours</p>
+          </div>
+
+        </form>
+
+      </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h3>Serani Export.</h3>
+        <p>Connecting quality with opportunity.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><strong>Address : </strong>
+        <p>Langha Matam, Near Bukhari Masjid. Dhoraji, Rajkot, Gujarat-360410</p><br>
+        <p><strong>Email : </strong>
+        <p><a href="contact.html">info@seraniexport.com</a></p><br>
+        <p><strong>Mobile :</strong>
+        <p>+91 98765 43210</p>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>&copy; 2025 Serani Export. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="chatbot-toggler">
+    <span class="material-symbols-outlined">mode_comment</span>
+    <span class="material-symbols-outlined">close</span>
+  </button>
+  <div class="chatbot">
+    <header>
+      <h2>Serani Assistant</h2>
+      <span class="close-btn material-symbols-outlined">close</span>
+    </header>
+    <ul class="chatbox">
+      <li class="chat incoming">
+        <span class="material-symbols-outlined">smart_toy</span>
+        <p>Hi there 👋<br>How can I help you today?</p>
+      </li>
+    </ul>
+    <div class="chat-input">
+      <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+      <span id="send-btn" class="material-symbols-outlined">send</span>
+    </div>
+  </div>
+
+  <script>
+    // ✅ AUTO-FILL PRODUCT FROM URL
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("product").value = params.get("product") || "";
+  </script>
+
+  <script>
+    document.getElementById("rfqForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const data = {
+        product: product.value,
+        grade: grade.value,
+        quantity: quantity.value,
+        packaging: packaging.value,
+        country: country.value,
+        port: port.value,
+        incoterm: incoterm.value,
+        payment: payment.value,
+        name: name.value,
+        email: email.value,
+        phone: phone.value,
+        message: message.value
+      };
+
+      fetch("https://script.google.com/macros/s/AKfycbwovCag7WwtFJgFD0GFSmNokSP-nxdld0ilQ1IUmlVe-PqwuZKPy8yzSJBhP1VPWXzpSw/exec", {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      })
+        .then(() => {
+          alert("✅ Your quotation request has been submitted successfully. Our team will contact you shortly.");
+          document.getElementById("rfqForm").reset();
+        })
+        .catch(() => {
+          alert("⚠️ Submission failed. Please try again.");
+        });
+    });
+  </script>
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/chatbot.js"></script>
 
 
 </body>
+
 </html>

@@ -33,7 +33,7 @@ const products = [
     { id: 23, name: "Coir Products", description: "Sustainable coir mats and ropes.", image: "assets/images/coir.png" },
 ];
 
-// API Endpoints
+
 
 // Get all products with pagination
 app.get('/api/products', (req, res) => {
