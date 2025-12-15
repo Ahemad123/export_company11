@@ -2,7 +2,7 @@
 .chatbot-toggler {
     position: fixed;
     bottom: 30px;
-    right: 35px;
+    right: 15px;
     outline: none;
     border: none;
     height: 50px;
@@ -235,7 +235,7 @@ header h2 {
     position: fixed;
     bottom: 30px;
     /* same vertical position as chatbot button */
-    right: 110px;
+    right: 100px;
     /* bubble sits left of the chatbot button */
     z-index: 9999;
     pointer-events: none;

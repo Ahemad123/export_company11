@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Category | Serani Export</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- MAIN SITE CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<!-- OPTIONAL: reuse header if you want -->
+<header>
+  <div class="container">
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo.png" alt="Serani Export" style="height:70px">
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="contact.html">Contact</a>
+        <a href="rfq.html" class="btn btn-primary">Get a Quote</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="category-hero">
+  <div class="category-hero-overlay">
+    <h1 id="category-title">Category</h1>
+    <p id="category-desc" >Category Description</p>
+  </div>
+</section>
+
+
+<section class="section-padding">
+  <div class="container">
+
+    <!-- CATEGORY TITLE + DESCRIPTION -->
+    <div class="section-header text-center ">
+      <h1 id="category-title"></h1>
+      <p id="category-desc"></p>
+    </div>
+
+    <!-- SUB PRODUCTS GRID -->
+    <div class="products-grid" id="category-products">
+      <!-- Cards injected by category.js -->
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+
+            <div class="footer-col">
+                <h3>Serani Export</h3>
+                <p>Connecting quality with opportunity.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><strong>Address:</strong><br>
+                    Langha Matam, Near Bukhari Masjid,<br>
+                    Dhoraji, Rajkot, Gujarat-360410
+                </p>
+                <p><strong>Email:</strong> info@seraniexport.com</p>
+                <p><strong>Mobile:</strong> +91 98765 43210</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom text-center">
+            <p>© 2025 Serani Export. All rights reserved.</p>
+        </div>
+    </footer>
+
+<!-- JS -->
+<script src="assets/js/category.js"></script>
+
+<script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+    </script>
+
+</body>
+</html>

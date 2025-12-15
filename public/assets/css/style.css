@@ -997,10 +997,7 @@ footer {
     to { transform: translateY(0); opacity: 1; }
 }
 
-         
-
-    /* RFQ Form Custom Styles */
-    .rfq-form-card {
+.rfq-form-card {
       background: white;
       border-radius: 16px;
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
@@ -1234,4 +1231,138 @@ footer {
   left: 50%;
   top: -4px;
   transform: translateX(-50%);
+}
+
+
+/* Floating Social Buttons – positioned above chatbot */
+.floating-socials {
+  position: fixed;
+  bottom: 80px; /* 👈 pushes it ABOVE chatbot */
+  right: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 9998; /* chatbot stays on top */
+}
+
+
+.social-btn {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.social-btn img {
+  width: 28px;
+  height: 28px;
+}
+
+/* WhatsApp */
+.social-btn.whatsapp {
+  background: #25d366;
+}
+
+/* LinkedIn */
+.social-btn.linkedin {
+  background: #0a66c2;
+}
+
+.social-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.social-btn::after {
+  content: attr(aria-label);
+  position: absolute;
+  right: 70px;
+  background: #0a2342;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.social-btn:hover::after {
+  opacity: 1;
+}
+
+/* CATEGORY BANNER */
+.category-hero {
+  width: 100%;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-hero h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .category-hero {
+    height: 200px;
+  }
+
+  .category-hero h1 {
+    font-size: 2rem;
+  }
+}
+
+.category-hero {
+  position: relative;
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+}
+
+.category-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  flex-direction: column;   /* 🔥 STACK vertically */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+#category-title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;    /* 🔥 space below title */
+}
+
+#category-desc {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.15rem;
+  max-width: 720px;
+  line-height: 1.6;
 }

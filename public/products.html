@@ -4,64 +4,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Our Products | Serani Export</title>
-    <meta name="description" content="Explore premium export products from Serani Export including rice, spices, seafood, textiles, and industrial goods.">
-    <meta name="keywords" content="Serani Export Products, Export Goods, Exports Frozen Seafood, Rice Exporter, Spices Exporter, Textile Exporter, Industrial Products Export"> 
+
+    <meta name="description"
+        content="Explore export product categories from Serani Export including vegetables, agriculture, fruits, seafood, scrap, and textiles.">
+    <meta name="keywords"
+        content="Serani Export Products, Export Categories, Vegetables Exporter, Seafood Exporter, Textile Exporter">
+
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/chatbot.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/chatbot.css">
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header>
         <div class="container">
             <nav>
                 <a href="index.html" class="logo">
-                    <img src="assets/images/logo.png" alt="Serani Export" style="height: 80px; width: auto;">
+                    <img src="assets/images/logo.png" alt="Serani Export" style="height: 80px;">
                 </a>
+
                 <div class="menu-toggle">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
+
                 <div class="nav-links">
                     <a href="index.html">Home</a>
                     <a href="about.html">About Us</a>
                     <a href="products.html" class="active">Products</a>
                     <a href="contact.html">Contact</a>
-                    <a href="rfq.html?producte" class="btn btn-primary">Get a Quote</a>
-
+                    <a href="rfq.html" class="btn btn-primary">Get a Quote</a>
                 </div>
             </nav>
         </div>
     </header>
 
+    <!-- PRODUCTS / CATEGORIES -->
     <section class="section-padding">
         <div class="container">
+
             <div class="section-header text-center">
-                <h1>Our Product Catalog</h1>
-                <p>Explore our wide range of premium export goods.</p>
+                <h1>Our Product Categories</h1>
+                <p>Explore our wide range of premium export product categories.</p>
             </div>
-            <div class="products-grid" id="products-container">
-                <!-- Products will be loaded here dynamically -->
-                <p class="text-center" style="grid-column: 1/-1;">Loading products...</p>
+
+            
+            <div class="products-grid">
+                <div class="products-grid">
+
+  <!-- Vegetables -->
+  <div class="product-card category-card">
+    <a href="category.html?category=vegetables"><img src="assets/images/vegetables.png" class="product-img" alt="Vegetables"></a>
+    <div class="product-info">
+      <h3>Vegetables</h3>
+      <p>Fresh export-quality vegetables sourced from trusted farms.</p>
+      <a href="category.html?category=vegetables" class="btn btn-secondary">
+        Explore Category
+      </a>
+    </div>
+  </div>
+
+  <!-- Agriculture -->
+  <div class="product-card category-card">
+    <a href="category.html?category=agriculture"><img src="assets/images/agriculture.png" class="product-img" alt="Agriculture Products"></a>
+    <div class="product-info">
+      <h3>Agriculture Products</h3>
+      <p>Premium agricultural commodities directly sourced from farms.</p>
+      <a href="category.html?category=agriculture" class="btn btn-secondary">
+        Explore Category
+      </a>
+    </div>
+  </div>
+
+  <!-- Fruits -->
+  <div class="product-card category-card">
+    <a href="category.html?category=fruits"><img src="assets/images/fruits.png" class="product-img" alt="Fruits"></a>
+    <div class="product-info">
+      <h3>Fruits</h3>
+      <p>Fresh fruits exported with strict quality control standards.</p>
+      <a href="category.html?category=fruits" class="btn btn-secondary">
+        Explore Category
+      </a>
+    </div>
+  </div>
+
+  <!-- Seafood -->
+  <div class="product-card category-card">
+    <a href="category.html?category=seafood"><img src="assets/images/seafood.png" class="product-img" alt="Seafood"></a>
+    <div class="product-info">
+      <h3>Seafood</h3>
+      <p>Fresh and frozen seafood processed under hygienic conditions.</p>
+      <a href="category.html?category=seafood" class="btn btn-secondary">
+        Explore Category
+      </a>
+    </div>
+  </div>
+
+  <!-- Scrap -->
+  <div class="product-card category-card">
+    <a href="category.html?category=scrap"><img src="assets/images/scrap.png" class="product-img" alt="Scrap Materials"></a>
+    <div class="product-info">
+      <h3>Scrap Materials</h3>
+      <p>Industrial-grade recyclable scrap materials for global buyers.</p>
+      <a href="category.html?category=scrap" class="btn btn-secondary">
+        Explore Category
+      </a>
+    </div>
+  </div>
+
+  <!-- Textile -->
+  <div class="product-card category-card">
+    <a href="category.html?category=textile"><img src="assets/images/textiles.png" class="product-img" alt="Textiles"></a>
+    <div class="product-info">
+      <h3>Textiles</h3>
+      <p>High-quality cotton and silk textile products for export.</p>
+      <a href="category.html?category=textile" class="btn btn-secondary">
+        Explore Category
+      </a>
+    </div>
+  </div>
+
+</div>
+
+
             </div>
+
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <div class="container footer-content">
+
             <div class="footer-col">
-                <h3>Serani Export.</h3>
+                <h3>Serani Export</h3>
                 <p>Connecting quality with opportunity.</p>
             </div>
+
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul>
@@ -71,43 +163,54 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
+
             <div class="footer-col">
                 <h4>Contact</h4>
-                <p><strong>Address : </strong><p>Langha Matam, Near Bukhari Masjid. Dhoraji, Rajkot, Gujarat-360410</p><br>
-                <p><strong>Email : </strong><p><a href="contact.html">info@seraniexport.com</a></p><br>
-                <p><strong>Mobile :</strong><p>+91 98765 43210</p>
+                <p><strong>Address:</strong><br>
+                    Langha Matam, Near Bukhari Masjid,<br>
+                    Dhoraji, Rajkot, Gujarat-360410
+                </p>
+                <p><strong>Email:</strong> info@seraniexport.com</p>
+                <p><strong>Mobile:</strong> +91 98765 43210</p>
             </div>
+
         </div>
+
         <div class="footer-bottom text-center">
-            <p>&copy; 2025 Serani Export. All rights reserved.</p>
+            <p>© 2025 Serani Export. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Chatbot Widget -->
+    <!-- CHATBOT -->
     <button class="chatbot-toggler">
         <span class="material-symbols-outlined">mode_comment</span>
         <span class="material-symbols-outlined">close</span>
     </button>
+
     <div class="chatbot">
         <header>
             <h2>Serani Assistant</h2>
             <span class="close-btn material-symbols-outlined">close</span>
         </header>
+
         <ul class="chatbox">
             <li class="chat incoming">
                 <span class="material-symbols-outlined">smart_toy</span>
                 <p>Hi there 👋<br>How can I help you today?</p>
             </li>
         </ul>
+
         <div class="chat-input">
             <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
             <span id="send-btn" class="material-symbols-outlined">send</span>
         </div>
     </div>
 
+    <!-- JS -->
     <script src="assets/js/chatbot.js"></script>
+
     <script>
-        // Mobile Menu Toggle
+        // Mobile menu toggle
         const mobileMenuBtn = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');
 
@@ -116,97 +219,7 @@
                 navLinks.classList.toggle('active');
             });
         }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const container = document.getElementById('products-container');
-            // Check if loading indicator already exists
-            let loadingIndicator = container.querySelector('p.text-center');
-            if (!loadingIndicator) {
-                loadingIndicator = document.createElement('p');
-                loadingIndicator.className = 'text-center';
-                loadingIndicator.style.gridColumn = '1/-1';
-                loadingIndicator.textContent = 'Loading products...';
-                container.appendChild(loadingIndicator);
-            }
-
-            let currentPage = 1;
-            let isLoading = false;
-            let hasMore = true;
-
-            // Initial load
-            loadProducts();
-
-            // Infinite Scroll Observer
-            const observer = new IntersectionObserver((entries) => {
-                if (entries[0].isIntersecting && !isLoading && hasMore) {
-                    loadProducts();
-                }
-            }, {
-                rootMargin: '100px'
-            });
-
-            observer.observe(loadingIndicator);
-
-            function loadProducts() {
-                if (isLoading || !hasMore) return;
-
-                isLoading = true;
-
-                fetch(`/api/products?page=${currentPage}&limit=6`)
-                    .then(response => response.json())
-                    .then(data => {
-                        const products = data.products;
-                        hasMore = data.hasMore;
-
-                        // Remove loading indicator before appending new items
-                        if (loadingIndicator.parentNode === container) {
-                            container.removeChild(loadingIndicator);
-                        }
-
-                        products.forEach(product => {
-                            const whatsappMsg = encodeURIComponent(
-          `Hello, I am interested in your product: ${product.name}`
-        );
-                            const card = document.createElement('div');
-                            card.className = 'product-card';
-                            card.innerHTML = `
-                                <img src="${product.image}" alt="${product.name}" class="product-img"
-                                    style="width: 100%; height: 200px; object-fit: cover;">
-                                <div class="product-info">
-                                    <h3>${product.name}</h3>
-                                    <p>${product.description}</p>
-                                    <a href="https://wa.me/918320640910?text=${whatsappMsg}" class="btn btn-secondary" style="margin-top: 1rem; width: 100%;">Request Quote</a>
-                                </div>
-                            `;
-                            container.appendChild(card);
-                        });
-
-                        currentPage++;
-                        isLoading = false;
-
-                        if (hasMore) {
-                            container.appendChild(loadingIndicator);
-                            observer.observe(loadingIndicator);
-                        } else {
-                            const endMessage = document.createElement('p');
-                            endMessage.className = 'text-center';
-                            endMessage.style.gridColumn = '1/-1';
-                            endMessage.style.marginTop = '20px';
-                            endMessage.textContent = 'You have reached the end of the catalog.';
-                            container.appendChild(endMessage);
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Error fetching products:', error);
-                        isLoading = false;
-                        loadingIndicator.textContent = 'Failed to load products. Please try again.';
-                        if (loadingIndicator.parentNode !== container) {
-                            container.appendChild(loadingIndicator);
-                        }
-                    });
-            }
-        });
     </script>
-</body>
 
+</body>
 </html>
