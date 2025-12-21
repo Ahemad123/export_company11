@@ -224,9 +224,9 @@ nav {
 }
 
 .product-img {
-    height: 250px;
+    height: auto;
     width: 100%;
-    object-fit: cover;
+    object-fit: unset;
 }
 
 .product-info {
@@ -434,7 +434,7 @@ footer {
 .product-img {
     height: 250px;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .product-info {
